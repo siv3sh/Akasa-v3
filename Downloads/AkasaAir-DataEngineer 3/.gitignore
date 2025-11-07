@@ -38,6 +38,9 @@ env/
 *~
 .DS_Store
 
+# Streamlit local secrets (do not commit real secrets)
+.streamlit/secrets.toml
+
 # Logs
 *.log
 logs/

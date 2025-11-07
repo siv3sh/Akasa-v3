@@ -16,6 +16,15 @@ A complete, production-ready data engineering solution that processes and analyz
 - [Architecture](#architecture)
 - [Best Practices](#best-practices)
 
+## Quick Deploy to Streamlit Cloud
+
+1. Push/fork this repo to your GitHub account.
+2. In Streamlit Cloud, create a new app from this repo and set the entrypoint to `streamlit_app.py`.
+3. (Optional for SQL KPIs) Add Secrets with your MySQL creds. Use the template at `.streamlit/secrets.example.toml`.
+4. Click “Deploy”. The app works with sample data out-of-the-box; SQL KPIs are optional.
+
+Tip: If your DB is local-only, SQL KPIs won’t work on Cloud unless the DB is reachable over the internet.
+
 ## Overview
 
 This project demonstrates advanced data engineering capabilities by implementing a dual-approach analytics pipeline:
