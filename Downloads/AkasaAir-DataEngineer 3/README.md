@@ -272,6 +272,13 @@ Thank you for using Akasa Air Data Engineering Solution!
 
 ## Example Outputs
 
+### Visual Tables
+
+- Repeat Customers: ![Repeat Customers](docs/kpi_images/repeat_customers.png)
+- Monthly Order Trends: ![Monthly Trends](docs/kpi_images/monthly_trends.png)
+- Regional Revenue: ![Regional Revenue](docs/kpi_images/regional_revenue.png)
+- Top Spenders (Last 30 Days): ![Top Spenders](docs/kpi_images/top_spenders.png)
+
 ### Output Files Generated
 
 The application generates the following files in the `outputs/` directory:
@@ -312,6 +319,12 @@ The application generates the following files in the `outputs/` directory:
 ## Architecture
 
 ### Diagrams
+
+Rendered PNGs are available under `docs/diagrams/` for convenient viewing:
+
+- Data Flow: ![Data Flow](docs/diagrams/flow.png)
+- Sequence: ![Sequence](docs/diagrams/sequence.png)
+- ER: ![ER](docs/diagrams/er.png)
 
 ```mermaid
 flowchart LR

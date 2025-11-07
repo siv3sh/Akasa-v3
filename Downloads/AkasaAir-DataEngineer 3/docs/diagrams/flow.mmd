@@ -1,0 +1,10 @@
+flowchart LR
+  A[CSV: data/customers.csv] -->|parse/clean| B[Customers DF]
+  C[XML: data/orders.xml] -->|parse/clean| D[Orders DF]
+  B --> E[Load to MySQL via SQLAlchemy]
+  D --> E
+  E --> F[SQL KPIs]
+  B --> G[Pandas KPIs]
+  D --> G
+  F --> H[outputs/*.json]
+  G --> I[outputs/*.csv]

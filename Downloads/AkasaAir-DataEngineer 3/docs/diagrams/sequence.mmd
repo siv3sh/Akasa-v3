@@ -1,0 +1,11 @@
+sequenceDiagram
+  participant App as src.main
+  participant DB as MySQL
+  participant FS as data/
+  App->>FS: read customers.csv, orders.xml
+  App->>DB: drop/create tables
+  App->>DB: bulk insert customers, orders
+  App->>DB: run SQL KPI queries
+  DB-->>App: KPI result sets
+  App->>App: compute Pandas KPIs
+  App->>FS: write outputs/*.json, *.csv

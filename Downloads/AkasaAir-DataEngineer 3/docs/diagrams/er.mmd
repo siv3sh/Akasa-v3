@@ -1,0 +1,18 @@
+erDiagram
+  CUSTOMERS {
+    INT customer_id PK
+    STRING customer_name
+    STRING mobile_number UK
+    STRING region
+    DATETIME created_at
+  }
+  ORDERS {
+    INT order_id PK
+    STRING mobile_number FK
+    DATETIME order_date_time
+    STRING sku_id
+    INT sku_count
+    FLOAT total_amount
+    DATETIME created_at
+  }
+  CUSTOMERS ||--o{ ORDERS : has
