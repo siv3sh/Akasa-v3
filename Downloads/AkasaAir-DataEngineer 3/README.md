@@ -143,6 +143,15 @@ OUTPUT_DIR=outputs
 
 ## Usage
 
+### Streamlit App (for local run and Streamlit Cloud)
+
+- Local: `streamlit run streamlit_app.py`
+- Streamlit Cloud:
+  - Deploy this repo
+  - Set app entrypoint to `streamlit_app.py`
+  - Add Secrets (optional, for SQL): `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, `DB_SOCKET`
+  - Use the UI to upload CSV/XML or use bundled sample data, then click "Run Analysis"
+
 ### Run the Complete Pipeline
 
 Execute the main script to run both SQL and Pandas approaches:
